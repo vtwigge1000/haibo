@@ -1,5 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Haibo.Views.userHome">
-	<ContentPage.Content>
-	</ContentPage.Content>
+<ContentPage xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Haibo.Views.userHome" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+    <ContentPage.Content>
+        <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/map"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              class="com.google.android.gms.maps.MapFragment" />-->
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <maps:Map VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+            x:Name="MyMap"
+            IsShowingUser="true"
+            MapType="Street"
+        />
+        </StackLayout>
+
+    </ContentPage.Content>
 </ContentPage>

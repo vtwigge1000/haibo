@@ -26,7 +26,7 @@ namespace Haibo
                     aboutPage.Icon = "tab_about.png";
                     break;
                 default:
-                    itemsPage = new ItemsPage()
+                    itemsPage = new Views.userHome()
                     {
                         Title = "Browse"
                     };

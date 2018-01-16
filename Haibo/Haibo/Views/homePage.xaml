@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Haibo.Views.HomePage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="testDesign.jpeg" Aspect="Fill"/>
+            <Button Text="SOS" AbsoluteLayout.LayoutBounds=".5,0.7,1,.12" AbsoluteLayout.LayoutFlags="All" TextColor="White" BackgroundColor="#00A3CC" BorderRadius="5" Opacity="1" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
