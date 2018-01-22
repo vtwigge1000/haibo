@@ -8,7 +8,7 @@ namespace Haibo
 {
     public partial class ItemsPage : ContentPage
     {
-        ItemsViewModel viewModel;
+       /* ItemsViewModel viewModel;
 
         public ItemsPage()
         {
@@ -41,5 +41,7 @@ namespace Haibo
             if (viewModel.Items.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
         }
+
+    */
     }
 }

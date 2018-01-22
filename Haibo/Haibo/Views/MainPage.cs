@@ -8,46 +8,66 @@ namespace Haibo
     {
         public MainPage()
         {
-            Page itemsPage, aboutPage = null;
+            Page homePage, eventCurrPage, communityPage, settingsPage = null;
+            NavigationPage.SetHasNavigationBar(this, false);
 
             switch (Device.RuntimePlatform)
             {
                 case Device.iOS:
-                    itemsPage = new NavigationPage(new ItemsPage())
+                    homePage = new NavigationPage(new Views.userHome())
                     {
-                        Title = "Browse"
+                        Icon = "ic_home.png"
                     };
 
-                    aboutPage = new NavigationPage(new AboutPage())
+                    eventCurrPage = new NavigationPage(new Views.userSettings())
                     {
-                        Title = "About"
+                        Icon = "ic_notifications.png"
                     };
-                    itemsPage.Icon = "tab_feed.png";
-                    aboutPage.Icon = "tab_about.png";
+
+                    communityPage = new NavigationPage(new Views.userCommunityMap())
+                    {
+                        Icon = "ic_speaker_notes.png"
+                    };
+
+                    settingsPage = new NavigationPage(new Views.userSettings())
+                    {
+                        Icon = "ic_settings.png"
+                    };
                     break;
                 default:
-                    itemsPage = new Views.userHome()
+                    homePage = new Views.userHome()
                     {
-                        Title = "Browse"
+                        Icon = "ic_home.png"
+            };
+                    eventCurrPage = new Views.userEventActive()
+                    {
+                        Icon = "ic_notifications.png"
                     };
 
-                    aboutPage = new AboutPage()
+                    communityPage = new Views.userCommunityMap()
                     {
-                        Title = "About"
+                        Icon = "ic_speaker_notes.png"
+                    };
+
+                    settingsPage = new Views.userSettings()
+                    {
+                        Icon = "ic_settings.png"
                     };
                     break;
             }
 
-            Children.Add(itemsPage);
-            Children.Add(aboutPage);
-
-            Title = Children[0].Title;
+            Children.Add(homePage);
+            Children.Add(eventCurrPage);
+            Children.Add(communityPage);
+            Children.Add(settingsPage);
+            
         }
+
+        
 
         protected override void OnCurrentPageChanged()
         {
             base.OnCurrentPageChanged();
-            Title = CurrentPage?.Title ?? string.Empty;
         }
     }
 }

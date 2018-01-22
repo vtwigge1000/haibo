@@ -9,9 +9,10 @@ namespace Haibo
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public EventDataStore<Event> DataStore => DependencyService.Get<EventDataStore<Event>>() ?? new MockDataStore();
 
         bool isBusy = false;
+
         public bool IsBusy
         {
             get { return isBusy; }
