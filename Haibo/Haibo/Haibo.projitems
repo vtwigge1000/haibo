@@ -62,6 +62,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\userCommunity.xaml.cs">
       <DependentUpon>userCommunity.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\userEventTab.xaml.cs">
+      <DependentUpon>userEventTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\userCommunityTab.xaml.cs">
+      <DependentUpon>userCommunityTab.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ItemDetailPage.xaml" />
@@ -104,10 +110,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)Views\TabbedPage1.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\userEventTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\userCommunityTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
