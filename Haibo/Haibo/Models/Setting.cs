@@ -4,10 +4,9 @@ using System.Text;
 
 namespace Haibo
 {
-    public class Event
+    public class Setting
     {
         public string Id { get; set; }
-        public string Text { get; set; }
-        public string Description { get; set; }
+        public string Name { get; set; }
     }
 }

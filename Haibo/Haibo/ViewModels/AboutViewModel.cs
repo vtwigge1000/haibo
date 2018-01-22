@@ -5,15 +5,15 @@ using Xamarin.Forms;
 
 namespace Haibo
 {
-    public class AboutViewModel : BaseViewModel
+    public class AboutViewModel //: BaseViewModel
     {
-        public AboutViewModel()
+       /* public AboutViewModel()
         {
             Title = "About";
 
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
         }
 
-        public ICommand OpenWebCommand { get; }
+        public ICommand OpenWebCommand { get; }*/
     }
 }

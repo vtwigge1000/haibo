@@ -6,7 +6,7 @@ namespace Haibo
 {
     public partial class ItemDetailPage : ContentPage
     {
-        ItemDetailViewModel viewModel;
+       /* ItemDetailViewModel viewModel;
 
         // Note - The Xamarin.Forms Previewer requires a default, parameterless constructor to render a page.
         public ItemDetailPage()
@@ -28,6 +28,6 @@ namespace Haibo
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
-        }
+        }*/
     }
 }
