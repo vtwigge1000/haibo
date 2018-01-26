@@ -15,6 +15,7 @@ namespace Haibo.Views
         public userCommunityMap()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             setUpMap();
         }
 

@@ -19,12 +19,12 @@ namespace Haibo
                         Icon = "ic_home.png"
                     };
 
-                    eventCurrPage = new NavigationPage(new Views.userSettings())
+                    eventCurrPage = new NavigationPage(new Views.userEventTab())
                     {
                         Icon = "ic_notifications.png"
                     };
 
-                    communityPage = new NavigationPage(new Views.userCommunityMap())
+                    communityPage = new NavigationPage(new Views.userCommunityTab())
                     {
                         Icon = "ic_speaker_notes.png"
                     };
@@ -39,12 +39,12 @@ namespace Haibo
                     {
                         Icon = "ic_home.png"
             };
-                    eventCurrPage = new Views.userEventActive()
+                    eventCurrPage = new Views.userEventTab()
                     {
                         Icon = "ic_notifications.png"
                     };
 
-                    communityPage = new Views.userCommunityMap()
+                    communityPage = new Views.userCommunityTab()
                     {
                         Icon = "ic_speaker_notes.png"
                     };
