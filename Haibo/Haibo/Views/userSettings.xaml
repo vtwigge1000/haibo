@@ -14,7 +14,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label Text ="{Binding Name}" FontSize="20" VerticalTextAlignment="Center" Margin="5,0,0,0"/>
+                        <Label Text ="{Binding Name}" FontSize="18" VerticalTextAlignment="Center" Margin="5,0,0,0"/>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

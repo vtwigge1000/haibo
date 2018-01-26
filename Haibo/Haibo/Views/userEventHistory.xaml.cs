@@ -15,7 +15,6 @@ namespace Haibo.Views
         public userEventHistory()
         {
             InitializeComponent();
-
             BindingContext = viewModel = new EventsViewModel();
         }
 

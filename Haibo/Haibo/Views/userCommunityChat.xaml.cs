@@ -10,6 +10,7 @@ namespace Haibo.Views
         public userCommunityChat()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
